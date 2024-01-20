@@ -18,7 +18,7 @@ public class DiamondKataTests
 
         // Assert
 
-        _ = lines.Should().HaveCount(1);
+        _ = lines.Should().ContainSingle();
         _ = lines[0].Should().Be("A");
     }
 
@@ -58,10 +58,10 @@ public class DiamondKataTests
 
         _ = lines.Should().HaveCount(5);
         _ = lines[0].Should().Be("  A  ");
-        _ = lines[2].Should().Be(" B B ");
-        _ = lines[3].Should().Be("C   C");
-        _ = lines[4].Should().Be(" B B ");
-        _ = lines[5].Should().Be("  A  ");
+        _ = lines[1].Should().Be(" B B ");
+        _ = lines[2].Should().Be("C   C");
+        _ = lines[3].Should().Be(" B B ");
+        _ = lines[4].Should().Be("  A  ");
     }
 
     [Fact]
